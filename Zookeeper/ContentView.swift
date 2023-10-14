@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var animalText: String = ""
+    @State var animals = [
+        Animal(name: "Cat"),
+        Animal(name: "Dog"),
+        Animal(name: "Monkey"),
+    ]
+
+    
     var body: some View {
         VStack {
             Text("Zoo")
-            List {
-                Text("Item 1")
-                Text("Item 2")
-                Text("Item 3")
+            List{
+                ForEach(animalGroups){
+                    animalGroup in
+                    Section(header: Text(animalGroup.groupName)) {
+                        ForEach(animalGroup.animals) {
+                            animal in Text(animal.name)
+                        }
+                    }
+                }
+                ForEach(animals){
+                    animal in Text(animal.name)
+                }
             }.listStyle(InsetGroupedListStyle())
+            
+            //Added logic to input animal name
+            TextField("Animal name", text: $animalText)
+            Button("Add"){
+                animals.append(Animal(name: animalText))
+            }
         }
         .padding()
     }

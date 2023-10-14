@@ -11,6 +11,9 @@
 		870065F52ADA628000351CC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870065F42ADA628000351CC9 /* ContentView.swift */; };
 		870065F72ADA628100351CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870065F62ADA628100351CC9 /* Assets.xcassets */; };
 		870065FB2ADA628100351CC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870065FA2ADA628100351CC9 /* Preview Assets.xcassets */; };
+		870066022ADA65CD00351CC9 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870066012ADA65CD00351CC9 /* Animal.swift */; };
+		870066052ADA660400351CC9 /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870066042ADA660400351CC9 /* Animals.swift */; };
+		870066072ADA70B800351CC9 /* AnimalGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870066062ADA70B800351CC9 /* AnimalGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		870065F62ADA628100351CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		870065F82ADA628100351CC9 /* Zookeeper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zookeeper.entitlements; sourceTree = "<group>"; };
 		870065FA2ADA628100351CC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		870066012ADA65CD00351CC9 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		870066042ADA660400351CC9 /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
+		870066062ADA70B800351CC9 /* AnimalGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		870065F12ADA628000351CC9 /* Zookeeper */ = {
 			isa = PBXGroup;
 			children = (
+				870066032ADA65F000351CC9 /* Model */,
 				870065F22ADA628000351CC9 /* ZookeeperApp.swift */,
 				870065F42ADA628000351CC9 /* ContentView.swift */,
 				870065F62ADA628100351CC9 /* Assets.xcassets */,
@@ -67,6 +74,16 @@
 				870065FA2ADA628100351CC9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		870066032ADA65F000351CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				870066012ADA65CD00351CC9 /* Animal.swift */,
+				870066042ADA660400351CC9 /* Animals.swift */,
+				870066062ADA70B800351CC9 /* AnimalGroup.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				870065F52ADA628000351CC9 /* ContentView.swift in Sources */,
+				870066052ADA660400351CC9 /* Animals.swift in Sources */,
+				870066072ADA70B800351CC9 /* AnimalGroup.swift in Sources */,
 				870065F32ADA628000351CC9 /* ZookeeperApp.swift in Sources */,
+				870066022ADA65CD00351CC9 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
